@@ -94,6 +94,15 @@ class IPToASN:
 def main():
     # Create a DataFrame with IP addresses
     df = pd.DataFrame(["157.92.49.99", "8.8.8.8", "0.0.0.0"], columns=["ip"])
+
+    # Load IP addresses from a CSV file
+    # df = pd.read_csv('path_to_your_file.csv')
+
+    # Load IP addresses from a JSON file
+    # df = pd.read_json('path_to_your_file.json')
+
+    # Load IP addresses from a Parquet file
+    # df = pd.read_parquet('path_to_your_file.parquet')
     
     # Convert tuple to datetime object for the date
     date = datetime(2020, 3, 4)

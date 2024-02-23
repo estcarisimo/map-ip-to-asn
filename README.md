@@ -38,3 +38,8 @@ Ensure you have these libraries installed and properly configured before running
 ```bash
 python map_ip_to_asn.py
 ```
+
+### Variables to Be Modified by the User
+
+- **DataFrame Source**: Replace the example IP address list or the DataFrame initialization with loading your data from a CSV, JSON, or Parquet file. Use the commented code as a guide to load your data file.
+- **date = `datetime.datetime(2020, 3, 4)**: Change this to the specific date for which you want to fetch the RouteViews prefix-to-AS snapshot. Ensure the format is datetime.datetime(YYYY, MM, DD).
